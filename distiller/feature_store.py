@@ -75,6 +75,10 @@ def build_sql_query_with_single_entity(
     entity_id_column="entity_id",
     entity_event_timestamp_column="event_timestamp",
 ):
+    """
+    Single entity pattern should be used for building online feature retrieval - at
+    least for bulk load/unload
+    """
     entity_metadata = Table(entity_table, MetaData(), autoload_with=engine)
     entity_columns = [c.name for c in entity_metadata.columns]
 

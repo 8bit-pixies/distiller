@@ -21,8 +21,10 @@ What it is:
 What we aim to do:
 
 - Provide SQL generation tools for offline feature retrieval
+- Document the semantics and language used in Distiller
 - (TODO) Provide SQL generation tools to create a batch online unload onto your favourite online serving tool
 - (TODO) Provide an opinionated online serving interface
+- (TODO) Have a sensible API
 
 What we're not:
 
